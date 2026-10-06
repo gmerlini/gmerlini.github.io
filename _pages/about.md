@@ -11,7 +11,7 @@ redirect_from:
 #   overlay_image: ../files/wallpaper.JPG
 #   overlay_filter: 0.5
 ---
-Welcome to my homepage! I am a postdoctoral researcher interested in **modelling and numerical simulation** of dynamic phenomena in complex media, with a focus on **wave propagation** and its application to **biomechanics**.
+Welcome to my homepage! I am a postdoctoral researcher interested in **modelling and numerical simulation** of **wave propagation** and **transport phenomena** in heterogeneous media, with applications to **biomechanics**.
 
 Short bio
 ---
