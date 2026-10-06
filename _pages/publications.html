@@ -12,25 +12,36 @@ author_profile: true
 {% include base_path %}
 
 <!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
+<!-- {% assign n = site.publications.size %} -->
+{% for category in site.publication_category %}
+  {% assign title_shown = false %}
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    {% if post.category != category[0] %}
+      {% continue %}
+    {% endif %}
+    {% unless title_shown %}
+      <h2>{{ category[1].title }}</h2><hr />
+      <!-- <ol reversed start="{{ n }}"> -->
+      <ul>
+      {% assign title_shown = true %}
+    {% endunless %}
+    <li>
+    {% if post.category == 'thesis' %}"<i>{{ post.title }}</i>", {{ post.date | date: "%Y" }}.<br>
+    <strong>Jury</strong>: {{ post.jury }}<br>
+    {% else %}{{ post.authors }}, "<i>{{ post.title }}</i>". {{ post.venue }}, {{ post.date | date: "%Y" }}.
+    {% endif %}
+    {% assign links = "" | split: "" %}
+    {% if post.doi %}{% capture l %}<a href="https://doi.org/{{ post.doi }}">DOI</a>{% endcapture %}{% assign links = links | push: l %}{% endif %}
+    {% if post.arxiv %}{% capture l %}<a href="{{ post.arxiv }}">arXiv</a>{% endcapture %}{% assign links = links | push: l %}{% endif %}
+    <!-- {% if post.paperurl %}{% capture l %}<a href="{{ post.paperurl }}">link</a>{% endcapture %}{% assign links = links | push: l %}{% endif %} -->
+    {% if post.hal %}{% capture l %}<a href="https://hal.science/{{ post.hal }}">HAL</a>{% endcapture %}{% assign links = links | push: l %}{% endif %} 
+    {% if post.pdf %}{% capture l %}<a href="{{ post.pdf }}">PDF</a>{% endcapture %}{% assign links = links | push: l %}{% endif %}
+    {% if post.bibtexurl %}{% capture l %}<a href="{{ post.bibtexurl }}">bib</a>{% endcapture %}{% assign links = links | push: l %}{% endif %}
+    {{ links | join: " | " }}</li>
+    <!-- {% assign n = n | minus: 1 %} -->
   {% endfor %}
-{% endif %}
+  {% if title_shown %}</ul>{% endif %}
+{% endfor %}
 
 
 

@@ -5,14 +5,14 @@
 .masthead {
   position: fixed;
   background: var(--global-bg-color);
-  height: fit-content;
+  height: $masthead-height;
   top: 0;
   width: 100%;
 
-  -webkit-animation: intro 0.3s both;
-          animation: intro 0.3s both;
-  -webkit-animation-delay: 0.15s;
-          animation-delay: 0.15s;
+  // -webkit-animation: intro 0.3s both;
+  //         animation: intro 0.3s both;
+  // -webkit-animation-delay: 0.15s;
+  //         animation-delay: 0.15s;
   z-index: 20;
 
   &::after {
@@ -29,9 +29,10 @@
     @include clearfix;
     padding: 0.5em 1em;
     font-family: $sans-serif-narrow;
+    max-width: 820px;
 
     @include breakpoint($x-large) {
-      max-width: $x-large;
+      max-width: 1050px;;
     }
 
     nav {
