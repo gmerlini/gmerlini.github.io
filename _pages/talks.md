@@ -1,11 +1,12 @@
 ---
-layout: single
+layout: archive
 title: "Talks and presentations"
 permalink: /talks/
 author_profile: true
 ---
 
-International and National conferences
+## International and National conferences
+
 ---
 
 - **Jun 2026**: XVIIeme Colloque Franco-Roumain de Mathématiques Appliquées, Nancy (France).
@@ -25,7 +26,8 @@ International and National conferences
 - **May 2023**: 18th International Symposium on Computer Methods in Biomechanics and Biomedical Engineering (CMBBE), Paris (France).
 
 
-Seminars or working groups
+## Seminars or working groups
+
 ---
 - **Sep 2026**: Seminar at LMA, Centrale Mediterranée, Marseille (France).
 
