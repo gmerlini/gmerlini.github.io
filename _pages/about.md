@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: #
+title: "About me"
 author_profile: true
 redirect_from: 
   - /about/
@@ -11,8 +11,6 @@ redirect_from:
 #   overlay_image: ../files/wallpaper.JPG
 #   overlay_filter: 0.5
 ---
-About me
-===
 
 My research concerns **modelling and numerical simulation** of dynamic phenomena in complex media, with a focus on **wave propagation** and its application to **biomechanics**.
 
