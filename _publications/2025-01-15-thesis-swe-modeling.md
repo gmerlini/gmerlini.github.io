@@ -5,8 +5,8 @@ category    : thesis
 permalink   : /publication/2025-01-15-thesis-swe-modeling
 excerpt     : #'This paper is about the number 3. The number 4 is left for future work.'
 date        : 2025-01-15
-jury        : 'O. Doaré <span style="font-weight: 300;">(president)</span>, J. Diaz <span style="font-weight: 300;">(reviewer)</span>, B. Lombard <span style="font-weight: 300;">(reviewer)</span>, Angèle Niclas, A. Pandolfi, G. Rosi, A. Nahas, J.-M. Allain <span style="font-weight: 300;">(supervisor)</span>, S. Imperiale <span style="font-weight: 300;">(supervisor)</span>'
-pdf         : 'https://gmerlini.github.io/files/phd-thesis.pdf'
+jury        : 'O. Doaré <span style="font-weight: 300;">(president)</span>, J. Diaz <span style="font-weight: 300;">(reviewer)</span>, B. Lombard <span style="font-weight: 300;">(reviewer)</span>, A. Niclas, A. Pandolfi, G. Rosi, A. Nahas, J.-M. Allain <span style="font-weight: 300;">(supervisor)</span>, S. Imperiale <span style="font-weight: 300;">(supervisor)</span>'
+pdf         : '/files/phd-thesis.pdf'
 hal         : 'tel-05040048'
 ---
 

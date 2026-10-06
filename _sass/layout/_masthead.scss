@@ -47,6 +47,9 @@
 
 .masthead__menu {
 
+  display: flex;
+  align-items: center;
+
   ul {
     margin: 0;
     padding: 0;
@@ -64,6 +67,7 @@
   &--lg {
     padding-right: 2em;
     font-weight: 700;
+    font-size: 1.4em;
   }
 }
 
