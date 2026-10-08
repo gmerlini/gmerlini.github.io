@@ -4,7 +4,7 @@ collection  : publications
 category    : preprints
 permalink   : /publication/2026-09-30-preprint-homog-lin-hyp-conserv-law
 excerpt     : # 'This paper is about the number 1. The number 2 is left for future work.'
-authors     : 'C.-L. Bris, F. Legoll, <strong>G. Merlini</strong>'
+authors     : 'C. Le Bris, F. Legoll, <strong>G. Merlini</strong>'
 date        : 2026-09-30
 venue       : 'Preprint'
 arxiv       : 'https://arxiv.org/abs/2609.37546'
